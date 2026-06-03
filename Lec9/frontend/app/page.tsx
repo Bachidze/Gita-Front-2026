@@ -175,7 +175,7 @@ export default function Home() {
         {products.map((el) => (
           <div
             key={el._id}
-            className="flex flex-wrap items-center gap-4 bg-cyan-200 text-black border-2 p-4 rounded-xl"
+            className="flex flex-wrap items-center gap-4 bg-cyan-200 text-black border-2 p-4 rounded-xl sm:text-[red]"
           >
             <div><b>Name:</b> {el.name}</div>
             <div><b>Price:</b> {el.price}</div>
