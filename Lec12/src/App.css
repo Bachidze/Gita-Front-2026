@@ -1,0 +1,14 @@
+.chnageColor{
+    color: red;
+}
+
+
+.namesBox{
+    background-color: red;
+    padding-block: 20px;
+    border: 1px solid black;
+}
+
+.chnageNameComponentBgColor{
+    background-color: blue;
+}
