@@ -1,0 +1,32 @@
+export const products = [
+    {
+        id:1,
+        title:"ყურსასენები",
+        price:150,
+        category:"Electronics"
+    },
+    {
+        id:2,
+        title:"ტანსაცმელი",
+        price:150,
+        category:"Clothing"
+    },
+    {
+        id:3,
+        title:"ტანსაცმელი",
+        price:150,
+        category:"Clothing"
+    },
+    {
+        id:4,
+        title:"ტანსაცმელი",
+        price:150,
+        category:"Clothing"
+    },
+    {
+        id:5,
+        title:"ყურსასენები",
+        price:150,
+        category:"Electronics"
+    },
+]
