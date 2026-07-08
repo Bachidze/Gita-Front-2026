@@ -1,0 +1,22 @@
+.app {
+  min-height: 100vh;
+  padding: 48px 20px;
+  background: #f8fafc;
+}
+
+.app__content {
+  width: min(100%, 1100px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app h1 {
+  margin: 0 0 12px;
+  color: #0f172a;
+  font-size: 40px;
+}
+
+.app__intro {
+  margin: 0 0 32px;
+  color: #64748b;
+}
