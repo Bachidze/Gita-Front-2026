@@ -32,7 +32,7 @@ function App() {
                 Contact
               </Link>
             </li>
-            <li>
+            <li>dipsa
               <Link className="nav-link" to="/faq">
                 FAQ
               </Link>
