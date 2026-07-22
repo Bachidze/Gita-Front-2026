@@ -7,9 +7,11 @@ const postsSchema = new mongoose.Schema({
     desc:{
         type:String
     },
+
     user:{
-        type:mongoose.Schema.Types,ref:"user"
+        type:mongoose.Schema.Types.ObjectId,ref:"user"
     }
+    
 },{
     timestamps:true
 }
