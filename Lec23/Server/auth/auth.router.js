@@ -15,7 +15,7 @@ authRouter.post("/sign-up",async (req,res) =>{
     const exsisitingUser = await usersModel.findOne({email:email})
 
     if(exsisitingUser){
-        return res.status(400).json({messsage:"ასეთი მომხამრებელი უკვე არსებობს სცადე განსხვავებული ელფოსტა !!!"})
+        return res.status(400).json({message:"ასეთი მომხამრებელი უკვე არსებობს სცადე განსხვავებული ელფოსტა !!!"})
     }
 
     const hashedPass = await bcrypt.hash(password,10)
@@ -38,7 +38,7 @@ authRouter.post("/sign-in",async (req,res) =>{
     const exsisitingUser = await usersModel.findOne({email:email})
 
     if(!exsisitingUser){
-        return res.status(400).json({messsage:"ასეთი მომხამრებელი არ არსებობს გაიარა sign-up"})
+        return res.status(400).json({message:"ასეთი მომხამრებელი არ არსებობს გაიარა sign-up"})
     }
 
 

@@ -6,8 +6,11 @@ const { isValidObjectId } = require("mongoose")
 const usersRouter = Router()
 
 
+
 usersRouter.get("/",async (req,res) => {
+
     const findAllUser = await usersModel.find()
+
     res.json({message:"გილოცავ შენ წარამტებით წამოიღე ინფორმაცია ბაზიდან",data:findAllUser})
 })
 
@@ -20,7 +23,7 @@ usersRouter.get("/:id",async (req,res) => {
         return res.status(400).json({message:"invalid id",data:null})
     }
 
-    const findUserById = await usersModel.findById(id)
+    const findUserById = await usersModel.findById(id).select("-password")
 
     res.json({message:"გილოცავ შენ წარამტებით იპოვე ჩანაწერი ID-ის მიხედვით",data:findUserById})
 })
