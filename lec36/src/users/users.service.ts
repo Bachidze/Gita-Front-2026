@@ -24,7 +24,7 @@ async create(createUserDto:CreateUserDto) {
  async findOne(id: string) {
   if(!isValidObjectId(id)) throw new BadRequestException()
   const findNewUser = await this.userModel.findById(id)
-if(!findNewUser) throw new NotFoundException()
+  if(!findNewUser) throw new NotFoundException()
     return findNewUser
   }
 
